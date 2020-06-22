@@ -5,7 +5,7 @@ $errors = []; // empty array for holding multiple input/authentication errors
 $username = '';
 $password = '';
 
-if(isset($_POST['submit'])) { // TRIED FOR GODDAMN EVER TO GET is_post_request() TO WORK!!! Never did, so used an isset() fxn instead. Thank God.
+if(isset($_POST['submit'])) { // TRIED FOR EVER TO GET is_post_request() TO WORK!!! Never did, so used an isset() fxn instead. Thank God.
 
   $username = $_POST['username'] ?? ''; // ?? is a null coalescing operator-- acts like an isset.
   $password = $_POST['password'] ?? ''; // ?? will return first operand if it exists and not NULL, otherwise returns it's second operand ('')
